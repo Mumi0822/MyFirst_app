@@ -66,12 +66,12 @@ public class MainActivity extends AppCompatActivity {
         //stringに
         String str1 = et1.getText().toString();
         String str2 = et2.getText().toString();
-        //intに変換
-        int num1 = Integer.parseInt(str1);
-        int num2 = Integer.parseInt(str2);
+        //doubleに変換
+        double num1 = Double.parseDouble(str1);
+        double num2 = Double.parseDouble(str2);
 
         //divide
-        int ans = num1/num2;
+        double ans = num1/num2;
         ((TextView)findViewById(R.id.textAnswer)).setText("" + ans);
     }
     public void onclear(View view){
